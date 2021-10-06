@@ -17,6 +17,7 @@ spec:
         annotations:
         name: opa-gatekeeper-run-$(uid)
       spec:
+        expirationSecondsTTL: 300
         params:
           - name: message
             value: $(tt.params.message)
